@@ -26,13 +26,13 @@ Data gets stored into the local database file dd.db. This file will not by synch
 Added logger directory with logger.go in it
 
 Added logging for 
-• sending and reading a message to a user that exists
-• creating a new user
-• reading messages with the wrong password
-• reading the messages for a user which doesn’t exist
-• sending messages to a user which doesn’t exist
-• creating a user with an account that doesn't exist
-• creating a user with an invalid password
+- sending and reading a message to a user that exists
+- creating a new user
+- reading messages with the wrong password
+- reading the messages for a user which doesn’t exist
+- sending messages to a user which doesn’t exist
+- creating a user with an account that doesn't exist
+- creating a user with an invalid password
 
 ## Mitigation
 
