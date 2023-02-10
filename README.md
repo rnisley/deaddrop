@@ -20,3 +20,23 @@ Then run `go run main.go -new -user <username here>` and you will be prompted to
 ## Database
 
 Data gets stored into the local database file dd.db. This file will not by synched to git repos. Delete this file if you don't set up a user properly on the first go
+
+## Logging Strategy
+
+Added logger directory with logger.go in it
+
+Added logging for 
+• sending and reading a message to a user that exists
+• creating a new user
+• reading messages with the wrong password
+• reading the messages for a user which doesn’t exist
+• sending messages to a user which doesn’t exist
+• creating a user with an account that doesn't exist
+• creating a user with an invalid password
+
+## Mitigation
+
+Added logger discussed in HW 1
+DB backup solution would require an external application to be developed. 
+Requiring user login for sending messages would require nearly a complete rewrite.
+Discussion with Andey revealed that any valid user can create additional users so that's been addressed already.

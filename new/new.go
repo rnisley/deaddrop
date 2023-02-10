@@ -8,17 +8,20 @@ import (
 	"strings"
 
 	"github.com/andey-robins/deaddrop-go/db"
+	"github.com/andey-robins/deaddrop-go/logger"
 	"github.com/andey-robins/deaddrop-go/session"
 )
 
 // Create a NewUser as authorized by the user 'user'
 func NewUser(user string) {
 	if !db.NoUsers() && !db.UserExists(user) {
+		logger.Log(6, user)
 		log.Fatalf("User not recognized")
 	}
 
 	err := session.Authenticate(user)
 	if err != nil {
+		logger.Log(7, user)
 		log.Fatalf("Unable to authenticate user")
 	}
 
@@ -32,6 +35,7 @@ func NewUser(user string) {
 	if err != nil {
 		log.Fatalf("Unable to create new user")
 	}
+	logger.Log(2, user)
 }
 
 // getUserMessage prompts the user for the message to send

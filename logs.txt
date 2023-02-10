@@ -1,0 +1,7 @@
+WARNING: 2023/02/10 15:41:01 Attempted to read messages for user that does not exist :void
+INFO: 2023/02/10 15:41:23 ric read messages
+INFO: 2023/02/10 15:42:06 Message sent to user3
+INFO: 2023/02/10 15:42:30 ric created a new user
+WARNING: 2023/02/10 15:42:46 Wrong password used to read user ric
+WARNING: 2023/02/10 15:42:59 Attempted to read messages for user that does not exist :badUser
+WARNING: 2023/02/10 15:43:15 Attempted to send message to user that does not exist :badUser
