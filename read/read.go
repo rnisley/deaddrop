@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"log"
 
-	//"deaddropHW/logger/logger"
-
 	"github.com/andey-robins/deaddrop-go/db"
 	"github.com/andey-robins/deaddrop-go/logger"
 	"github.com/andey-robins/deaddrop-go/session"

@@ -38,5 +38,6 @@ Added logging for
 
 Added logger discussed in HW 1
 DB backup solution would require an external application to be developed. 
-Requiring user login for sending messages would require nearly a complete rewrite.
 Discussion with Andey revealed that any valid user can create additional users so that's been addressed already.
+
+Added user login requirement for sending messages

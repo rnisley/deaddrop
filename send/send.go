@@ -7,12 +7,24 @@ import (
 	"os"
 
 	"github.com/andey-robins/deaddrop-go/db"
-	"github.com/andey-robins/deaddrop-go/logger" //I don't think this path will work
+	"github.com/andey-robins/deaddrop-go/logger"
+	"github.com/andey-robins/deaddrop-go/session"
 )
 
 // SendMessage takes a destination username and will
 // prompt the user for a message to send to that user
-func SendMessage(to string) {
+func SendMessage(to string, user string) {
+	if !db.UserExists(user) {
+		logger.Log(8, user) //log sender not valid
+		log.Fatalf("User not recognized")
+	}
+
+	err := session.Authenticate(user)
+	if err != nil {
+		logger.Log(9, user) //log sender pw not valid
+		log.Fatalf("Unable to authenticate user")
+	}
+
 	if !db.UserExists(to) {
 		logger.Log(5, to)
 		log.Fatalf("Destination user does not exist")

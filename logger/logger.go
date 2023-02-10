@@ -37,6 +37,10 @@ func Log(event int, user string) {
 		WarningLogger.Println("Attempted to create new user using invalid user :" + user)
 	case 7:
 		WarningLogger.Println(user + " attempted to create new user using invalid password")
+	case 8:
+		WarningLogger.Println(user + " attempted to send message, but " + user + " is not a valid user")
+	case 9:
+		WarningLogger.Println(user + " attempted to send message using invalid password")
 	}
 
 }

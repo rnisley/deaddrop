@@ -40,7 +40,7 @@ func main() {
 		fmt.Println("  -send  The verb flag to specify you want to send data")
 		fmt.Println("  -read  The verb flag to specify you want to retreive your data")
 		pad()
-		fmt.Println(" Option -send must include the flags: -to")
+		fmt.Println(" Option -send must include the flags: -to, -user")
 		fmt.Println(" Option -new  must include the flags: -user")
 		fmt.Println(" Option -read must include the flags: -user")
 		pad()
@@ -61,7 +61,7 @@ func main() {
 	if read {
 		readMode(user)
 	} else if send {
-		sendMode(to)
+		sendMode(to, user)
 	} else if new {
 		newMode(user)
 	}
@@ -71,8 +71,8 @@ func readMode(user string) {
 	read.ReadMessages(user)
 }
 
-func sendMode(to string) {
-	send.SendMessage(to)
+func sendMode(to string, user string) {
+	send.SendMessage(to, user)
 }
 
 func newMode(user string) {
