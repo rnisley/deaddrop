@@ -41,3 +41,6 @@ DB backup solution would require an external application to be developed.
 Discussion with Andey revealed that any valid user can create additional users so that's been addressed already.
 
 Added user login requirement for sending messages
+- send now requires "to" and "user" flags
+- updated help message for send
+- updated logger to include invalid send attempts
