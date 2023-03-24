@@ -44,3 +44,14 @@ func Log(event int, user string) {
 	}
 
 }
+
+func noAuth(user string) {
+	file, err := os.OpenFile("logs.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil {
+		log.Println(err)
+	}
+	defer file.Close()
+
+	WarningLogger = log.New(file, "WARNING: ", log.Ldate|log.Ltime)
+	WarningLogger.Println("Message for " + user + " could not be authenticated.")
+}
