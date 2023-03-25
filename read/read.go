@@ -21,8 +21,8 @@ func ReadMessages(user string) {
 		log.Fatalf("Unable to authenticate user")
 	}
 
-	messages := db.GetMessagesForUser(user)
 	logger.Log(0, user)
+	messages := db.GetMessagesForUser(user)
 	for _, message := range messages {
 		fmt.Println(message)
 	}

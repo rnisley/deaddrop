@@ -1,12 +1,6 @@
-WARNING: 2023/02/10 15:41:01 Attempted to read messages for user that does not exist :void
-INFO: 2023/02/10 15:41:23 ric read messages
-INFO: 2023/02/10 15:42:06 Message sent to user3
-INFO: 2023/02/10 15:42:30 ric created a new user
-WARNING: 2023/02/10 15:42:46 Wrong password used to read user ric
-WARNING: 2023/02/10 15:42:59 Attempted to read messages for user that does not exist :badUser
-WARNING: 2023/02/10 15:43:15 Attempted to send message to user that does not exist :badUser
-INFO: 2023/02/10 16:05:47 Message sent to user3
-INFO: 2023/02/10 16:06:15 user3 read messages
-WARNING: 2023/02/10 16:09:12 badUser attempted to send message, but badUser is not a valid user
-WARNING: 2023/02/10 16:09:17 ric attempted to send message using invalid password
-WARNING: 2023/02/10 16:12:37 Attempted to send message to user that does not exist :badUser
+INFO: 2023/03/24 20:17:29 void created a new user
+INFO: 2023/03/24 20:17:41 ric created a new user
+INFO: 2023/03/24 20:17:52 Message sent to ian
+INFO: 2023/03/24 20:17:59 ian read messages
+WARNING: 2023/03/24 20:18:31 Message for ian could not be authenticated.
+INFO: 2023/03/24 20:18:31 ian read messages

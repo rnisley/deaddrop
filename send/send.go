@@ -32,7 +32,7 @@ func SendMessage(to string, user string) {
 
 	message := getUserMessage()
 	logger.Log(1, to)
-	db.SaveMessage(message, to)
+	db.SaveMessage(message, to, user)
 }
 
 // getUserMessage prompts the user for the message to send
