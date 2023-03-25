@@ -2,5 +2,5 @@ INFO: 2023/03/24 20:17:29 void created a new user
 INFO: 2023/03/24 20:17:41 ric created a new user
 INFO: 2023/03/24 20:17:52 Message sent to ian
 INFO: 2023/03/24 20:17:59 ian read messages
-WARNING: 2023/03/24 20:18:31 Message for ian could not be authenticated.
 INFO: 2023/03/24 20:18:31 ian read messages
+WARNING: 2023/03/24 20:18:31 Message for ian could not be authenticated.

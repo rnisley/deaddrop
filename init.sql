@@ -11,3 +11,9 @@ CREATE TABLE Messages (
     mac BLOB,
     sender TEXT
 );
+
+CREATE TRIGGER lock
+BEFORE UPDATE OF mac ON Messages
+BEGIN
+  SELECT RAISE(ABORT, "cannot change macs");
+END

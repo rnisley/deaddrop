@@ -44,3 +44,14 @@ Added user login requirement for sending messages
 - send now requires "to" and "user" flags
 - updated help message for send
 - updated logger to include invalid send attempts
+
+
+## MAC Strategy
+
+Added a trigger to "lock" the MACs column in the DB. 
+Added log function to log MAC missmatch.
+Added message displayed to user to warn of failure to authenticate message.
+Added sender ID to message DB
+Added sender report to message display
+Used sha256 encryption to creat the MAC hash to compare to the message.
+Since the encryption is strong, and the MAC can't be changed this is the best way to apply this for this application.
